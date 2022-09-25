@@ -1,0 +1,43 @@
+- name: "Chocolatey"
+  hosts: win
+  tasks:
+    - name: Install Google Chrome
+      win_chocolatey:
+          name: googlechrome
+          state: present
+          ignore_checksums: yes
+    - name: Install Firefox
+      win_chocolatey:
+          name: firefox
+          state: present
+          ignore_checksums: yes
+    - name: Install Spotify
+      win_chocolatey:
+          name: spotify
+          state: present
+          ignore_checksums: yes
+    - name: Install Google Chrome
+      win_chocolatey:
+          name: googlechrome
+          state: present
+          ignore_checksums: yes
+    - name: Install VSCode
+      win_chocolatey:
+          name: vscode
+          state: present
+          ignore_checksums: yes
+    - name: Install 7Zip
+      win_chocolatey:
+          name: 7zip
+          state: present
+          ignore_checksums: yes
+    - name: Install Autohotkey
+      win_chocolatey:
+          name: autohotkey
+          state: present
+          ignore_checksums: yes
+    - name: Install Bitwarden
+      win_chocolatey:
+          name: bitwarden
+          state: present
+          ignore_checksums: yes
